@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mivaan's Mundan Sanskar – Invitation</title>
+<meta name="description" content="You are warmly invited to the Mundan Sanskar (Babri) of Chi. Mivaan – Sunday, 22 November 2026, Bharuch.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chi. Mivaan's Mundan Sanskar – You're Invited!">
+<meta property="og:description" content="Sunday, 22 Nov 2026 · Bharuch · Mundan 9:30 AM · Batuk Yatra 4:00 PM · Bhojan 7:00 PM">
+<meta property="og:image" content="https://shashankmistry31.github.io/mivaan-babri-invitation/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://shashankmistry31.github.io/mivaan-babri-invitation/">
+<meta name="twitter:card" content="summary_large_image">
+<style>html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@300;400;600;700&family=Kalam:wght@400;700&display=swap">
+<style>
+/* Layout: compact one-page ivory card on kumkum-red ground; hero = baby animation beside name, events in a 3-up row, home + tahuko share a row. Single deliberate look. */
+:root {
+  --ground: #6b0f22;
+  --ground-deep: #420812;
+  --ivory: #fff8ec;
+  --ivory-2: #fbecd2;
+  --ink: #3b0a14;
+  --ink-soft: #6e3b44;
+  --kumkum: #b3122e;
+  --gold: #c8901a;
+  --gold-hi: #f2c14e;
+  --marigold: #f29b11;
+  --marigold-2: #ffc23a;
+  --leaf: #2f6b2a;
+  --font-display: "Yatra One", "Georgia", serif;
+  --font-body: "Mukta", "Segoe UI", system-ui, sans-serif;
+  --font-hand: "Kalam", "Comic Sans MS", cursive;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--ground);
+  background-image:
+    radial-gradient(circle at 50% -10%, rgba(242,193,78,.25), transparent 55%),
+    radial-gradient(rgba(242,193,78,.13) 1.2px, transparent 1.6px);
+  background-size: 100% 100%, 22px 22px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.45;
+  overflow-x: hidden;
+}
+
+#petals { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5; }
+
+/* mandap doors */
+.doors { position: fixed; inset: 0; z-index: 20; display: flex; pointer-events: none; perspective: 1400px; }
+.door {
+  flex: 1; height: 100%;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(242,193,78,.18) 46px 48px),
+    linear-gradient(180deg, var(--kumkum), var(--ground-deep));
+  border: 6px double var(--gold-hi);
+  display: grid; place-items: center;
+  transition: transform 1.6s cubic-bezier(.7,0,.25,1), opacity 1.6s ease;
+}
+.door.l { transform-origin: left center; }
+.door.r { transform-origin: right center; }
+.door span { font-family: var(--font-display); color: var(--gold-hi); font-size: clamp(42px, 12vw, 90px); opacity: .9; }
+.doors.open .door.l { transform: rotateY(-100deg); opacity: 0; }
+.doors.open .door.r { transform: rotateY(100deg); opacity: 0; }
+.doors.gone { display: none; }
+
+/* toran */
+.toran { position: relative; height: 46px; overflow: hidden; z-index: 3; }
+.toran .rope { position: absolute; left: 0; right: 0; top: 6px; height: 4px; background: var(--leaf); border-radius: 2px; }
+.toran .strand { position: absolute; top: 8px; display: flex; flex-direction: column; align-items: center; transform-origin: top center; animation: sway 3.4s ease-in-out infinite; }
+.toran .strand i { width: 12px; height: 12px; border-radius: 50%; margin-top: -2px; background: radial-gradient(circle at 35% 35%, var(--marigold-2), var(--marigold) 60%, #c86a00); }
+.toran .strand i:nth-child(even) { background: radial-gradient(circle at 35% 35%, #ffe08a, var(--marigold-2) 60%, var(--marigold)); }
+.toran .strand b { width: 9px; height: 13px; margin-top: -2px; background: var(--leaf); border-radius: 0 0 50% 50% / 0 0 100% 100%; }
+@keyframes sway { 0%,100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+
+.wrap {
+  position: relative; z-index: 4;
+  max-width: 880px; margin: 0 auto;
+  padding-left: max(12px, env(safe-area-inset-left, 0px));
+  padding-right: max(12px, env(safe-area-inset-right, 0px));
+  padding-block: 0 20px;
+}
+@media (min-width: 420px) {
+  .wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+}
+
+.card {
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, var(--ivory) 0%, var(--ivory) 55%, var(--ivory-2) 100%);
+  border-radius: 6px;
+  padding: clamp(18px, 3.5vw, 32px) clamp(14px, 3.5vw, 34px);
+  box-shadow: 0 20px 50px rgba(0,0,0,.45), 0 0 0 3px var(--ivory), 0 0 0 5px var(--gold), 0 0 0 8px var(--ivory), 0 0 0 9px var(--gold);
+  margin-top: 8px;
+  display: grid; gap: clamp(14px, 2.4vw, 20px);
+}
+.corner { position: absolute; width: 46px; height: 46px; color: var(--gold); pointer-events: none; }
+.corner svg { width: 100%; height: 100%; }
+.corner.tl { top: 6px; left: 6px; }
+.corner.tr { top: 6px; right: 6px; transform: scaleX(-1); }
+.corner.bl { bottom: 6px; left: 6px; transform: scaleY(-1); }
+.corner.br { bottom: 6px; right: 6px; transform: scale(-1,-1); }
+
+.topline { text-align: center; font-family: var(--font-display); color: var(--kumkum); font-size: 15px; letter-spacing: .03em; display: flex; justify-content: center; align-items: center; gap: 8px 14px; flex-wrap: wrap; }
+.topline .amantran { color: var(--gold); letter-spacing: .14em; text-transform: uppercase; font-size: 14px; }
+
+/* hero */
+.hero { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: clamp(12px, 3vw, 28px); align-items: center; }
+.hero-art { text-align: center; }
+.hero-text { min-width: 0; text-align: center; }
+.intro { color: var(--ink-soft); margin: 0 auto; max-width: 34em; text-wrap: pretty; font-size: 15.5px; }
+.intro strong { color: var(--ink); font-weight: 600; }
+.chi { font-family: var(--font-display); color: var(--gold); font-size: 20px; display: block; margin-top: 8px; line-height: 1; }
+.name {
+  font-family: var(--font-display); font-size: clamp(58px, 12vw, 96px); line-height: 1;
+  background: linear-gradient(100deg, var(--kumkum) 0%, var(--kumkum) 38%, var(--gold-hi) 50%, var(--kumkum) 62%, var(--kumkum) 100%);
+  background-size: 250% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: shimmer 4.5s linear infinite;
+}
+@keyframes shimmer { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+.ceremony { font-family: var(--font-display); color: var(--ink); font-size: clamp(19px, 4vw, 24px); line-height: 1.2; }
+.ceremony small { display: block; font-family: var(--font-body); font-size: 13px; color: var(--ink-soft); letter-spacing: .08em; }
+.muhurat { margin-top: 10px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); padding: 6px 4px; }
+.muhurat .date { font-family: var(--font-display); font-size: clamp(21px, 4.4vw, 27px); color: var(--kumkum); line-height: 1.2; }
+.muhurat .tithi { color: var(--ink-soft); font-size: 14px; }
+.countdown { display: flex; justify-content: center; align-items: baseline; gap: 6px 12px; margin-top: 8px; flex-wrap: wrap; font-size: 13px; color: var(--ink-soft); }
+.countdown b { font-family: var(--font-display); font-weight: 400; font-size: 20px; color: var(--kumkum); font-variant-numeric: tabular-nums; margin-right: 2px; }
+
+/* baby haircut scene */
+.baby-scene { width: 100%; max-width: 220px; display: block; margin: 0 auto; overflow: visible; }
+.baby-scene * { transform-box: fill-box; }
+.baby-scene .eye { transform-origin: center; animation: blink 4s infinite; }
+@keyframes blink { 0%,92%,100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+.baby-scene .blade-a { transform-origin: 0% 50%; animation: bladeA .35s ease-in-out infinite alternate; }
+.baby-scene .blade-b { transform-origin: 0% 50%; animation: bladeB .35s ease-in-out infinite alternate; }
+@keyframes bladeA { from { transform: rotate(-16deg); } to { transform: rotate(-2deg); } }
+@keyframes bladeB { from { transform: rotate(16deg); } to { transform: rotate(2deg); } }
+.baby-scene .giggle, .baby-scene .sparkle { opacity: 0; }
+.baby-caption { font-family: var(--font-hand); color: var(--ink-soft); font-size: 14px; }
+
+/* section label */
+.label { display: flex; align-items: center; gap: 10px; justify-content: center; margin-bottom: 10px; }
+.label h2 { font-family: var(--font-display); font-weight: 400; color: var(--ivory); background: var(--kumkum); font-size: 17px; margin: 0; padding: 2px 18px 0; border-radius: 999px; white-space: nowrap; }
+.label::before, .label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); max-width: 160px; }
+.label::after { transform: scaleX(-1); }
+
+/* events: 3 up */
+.events { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.event { min-width: 0; background: rgba(255,255,255,.6); border: 1px solid rgba(200,144,26,.55); border-radius: 4px; padding: 10px 12px 12px; display: grid; grid-template-rows: auto auto 1fr auto; gap: 2px; text-align: center; }
+.event .time { justify-self: center; font-family: var(--font-display); color: var(--ivory); background: var(--gold); border-radius: 999px; padding: 1px 12px 0; font-size: 15px; font-variant-numeric: tabular-nums; }
+.event h3 { font-family: var(--font-display); font-weight: 400; color: var(--kumkum); font-size: 19px; margin: 4px 0 0; line-height: 1.2; }
+.event .gu { font-size: 12.5px; color: var(--gold); margin-top: -2px; }
+.event p { margin: 4px 0 0; font-size: 15px; }
+.event .route { font-size: 14px; color: var(--ink); margin-top: 4px; }
+.event .route em { color: var(--gold); font-style: normal; padding: 0 2px; }
+.maplink { justify-self: center; display: inline-flex; gap: 4px; align-items: center; margin-top: 6px; font-size: 14px; font-weight: 600; color: var(--kumkum); text-decoration: none; border-bottom: 1px dashed var(--kumkum); }
+.maplink:hover, .maplink:focus-visible { color: var(--ground-deep); border-bottom-style: solid; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* bottom row */
+.bottom { display: grid; grid-template-columns: 1fr 1.35fr; gap: 12px; align-items: stretch; }
+.home, .tahuko { min-width: 0; border-radius: 4px; padding: 12px 14px; text-align: center; }
+.home { border: 2px solid var(--kumkum); background: rgba(255,255,255,.55); display: grid; align-content: center; gap: 4px; }
+.home .addr { font-size: 15.5px; font-weight: 600; }
+.phones { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
+.phone { font-family: var(--font-body); font-size: 15px; font-weight: 600; color: var(--ivory); background: var(--kumkum); border: 0; border-radius: 999px; padding: 4px 14px; cursor: pointer; font-variant-numeric: tabular-nums; user-select: all; }
+.phone:hover { background: var(--ground-deep); }
+.copied { font-size: 12.5px; color: var(--leaf); min-height: 1.1em; }
+.tahuko { background: var(--ivory-2); border: 2px dashed var(--kumkum); }
+.tahuko .poem { font-family: var(--font-hand); font-size: 15px; color: var(--ink); line-height: 1.55; }
+.tahuko .poem strong { color: var(--kumkum); }
+.kids { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: 8px; }
+.kids span { font-family: var(--font-hand); font-weight: 700; font-size: 13px; background: var(--ivory); border: 1px solid var(--gold); color: var(--kumkum); padding: 0 9px; border-radius: 999px; animation: bob 2.8s ease-in-out infinite; }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+
+.footer { text-align: center; font-family: var(--font-display); color: var(--kumkum); font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 12px; }
+.footer small { display: block; font-family: var(--font-body); font-size: 13px; color: var(--gold); }
+.diya { width: 34px; height: 34px; flex: none; }
+.diya .flame { transform-origin: 50% 90%; transform-box: fill-box; animation: flick 1.1s ease-in-out infinite alternate; }
+@keyframes flick { from { transform: scale(1, 1) rotate(-3deg); } to { transform: scale(.88, 1.12) rotate(3deg); } }
+
+.rise { animation: rise .9s ease both; }
+@keyframes rise { from { transform: translateY(12px); opacity: .001; } to { transform: none; opacity: 1; } }
+
+@media (max-width: 720px) {
+  .events { grid-template-columns: 1fr; gap: 8px; }
+  .event { grid-template-columns: auto 1fr; grid-template-rows: none; text-align: left; column-gap: 12px; align-items: start; }
+  .event .time { grid-row: span 5; align-self: start; margin-top: 4px; }
+  .event h3 { margin-top: 0; }
+  .maplink { justify-self: start; }
+  .bottom { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .hero { grid-template-columns: 1fr; gap: 6px; }
+  .baby-scene { max-width: 170px; }
+  .corner { width: 34px; height: 34px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .doors, #petals { display: none; }
+  .name { color: var(--kumkum); background: none; }
+}
+</style>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<div class="doors" id="doors" aria-hidden="true">
+  <div class="door l"><span>॥</span></div>
+  <div class="door r"><span>॥</span></div>
+</div>
+
+<div class="toran" id="toran" aria-hidden="true"><div class="rope"></div></div>
+
+<main class="wrap">
+  <article class="card">
+    <div class="corner tl" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 60V20C4 11 11 4 20 4h40"/><path d="M10 60V24c0-8 6-14 14-14h36"/><circle cx="22" cy="22" r="5" fill="currentColor" stroke="none"/></svg></div>
+    <div class="corner tr" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 60V20C4 11 11 4 20 4h40"/><path d="M10 60V24c0-8 6-14 14-14h36"/><circle cx="22" cy="22" r="5" fill="currentColor" stroke="none"/></svg></div>
+    <div class="corner bl" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 60V20C4 11 11 4 20 4h40"/><path d="M10 60V24c0-8 6-14 14-14h36"/><circle cx="22" cy="22" r="5" fill="currentColor" stroke="none"/></svg></div>
+    <div class="corner br" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 60V20C4 11 11 4 20 4h40"/><path d="M10 60V24c0-8 6-14 14-14h36"/><circle cx="22" cy="22" r="5" fill="currentColor" stroke="none"/></svg></div>
+
+    <div class="topline rise"><span>॥ Shri Ganeshaya Namah ॥</span><span class="amantran">Hardik Amantran</span></div>
+
+    <header class="hero rise">
+      <div class="hero-art">
+        <svg class="baby-scene" id="baby" viewBox="0 0 240 230" role="img" aria-label="Cartoon of baby Mivaan smiling while scissors snip his hair">
+          <path d="M44 230c4-34 34-52 76-52s72 18 76 52z" fill="#b3122e"/>
+          <g fill="#f2c14e"><circle cx="80" cy="212" r="3"/><circle cx="104" cy="200" r="3"/><circle cx="136" cy="200" r="3"/><circle cx="160" cy="212" r="3"/><circle cx="120" cy="220" r="3"/></g>
+          <path d="M96 182q24 14 48 0" fill="none" stroke="#f2c14e" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="58" cy="124" r="13" fill="#f3bf93"/><circle cx="182" cy="124" r="13" fill="#f3bf93"/>
+          <circle cx="58" cy="124" r="6" fill="#e9a77a"/><circle cx="182" cy="124" r="6" fill="#e9a77a"/>
+          <circle cx="120" cy="120" r="62" fill="#f8cfa6"/>
+          <ellipse cx="100" cy="76" rx="16" ry="7" fill="#fff" opacity=".35"/>
+          <path id="hair-cap" d="M60 106c2-34 28-50 60-50s58 16 60 50c-10-14-24-22-34-22-8 8-20 10-26 4-8 8-24 10-34 2-10 2-20 6-26 16z" fill="#3a2414"/>
+          <g fill="#3a2414">
+            <path class="tuft" d="M70 82c-4-14 2-24 10-28-2 8 2 14 8 18z"/>
+            <path class="tuft" d="M92 66c-2-14 6-22 14-24-3 8 0 14 6 18z"/>
+            <path class="tuft" d="M114 60c0-14 8-22 16-24-4 8-1 15 4 20z"/>
+            <path class="tuft" d="M136 64c2-14 12-20 20-20-5 7-4 14 0 20z"/>
+            <path class="tuft" d="M156 76c4-12 14-16 22-14-6 5-6 12-4 18z"/>
+          </g>
+          <g class="eye"><ellipse cx="98" cy="122" rx="6" ry="8" fill="#2b1a12"/><circle cx="100" cy="119" r="2.2" fill="#fff"/></g>
+          <g class="eye"><ellipse cx="142" cy="122" rx="6" ry="8" fill="#2b1a12"/><circle cx="144" cy="119" r="2.2" fill="#fff"/></g>
+          <ellipse cx="84" cy="142" rx="10" ry="6" fill="#f28c9b" opacity=".6"/>
+          <ellipse cx="156" cy="142" rx="10" ry="6" fill="#f28c9b" opacity=".6"/>
+          <path class="smile" d="M108 148q12 10 24 0" fill="none" stroke="#7a2a2a" stroke-width="3" stroke-linecap="round"/>
+          <path class="giggle" d="M106 145q14 0 28 0q-2 16-14 16t-14-16z" fill="#a8323e"/>
+          <circle cx="120" cy="136" r="2" fill="#e9a77a"/>
+          <circle cx="120" cy="80" r="5" fill="#b3122e"/>
+          <g class="sparkle" fill="#f2c14e">
+            <path d="M150 54l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/>
+            <path d="M88 48l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>
+          </g>
+          <g id="snips">
+            <g class="blade-a"><path d="M0 0L34 -4" stroke="#8a97a6" stroke-width="5" stroke-linecap="round"/><circle cx="-9" cy="5" r="7" fill="none" stroke="#b3122e" stroke-width="4"/></g>
+            <g class="blade-b"><path d="M0 0L34 4" stroke="#aeb9c6" stroke-width="5" stroke-linecap="round"/><circle cx="-9" cy="-5" r="7" fill="none" stroke="#b3122e" stroke-width="4"/></g>
+            <circle r="2.5" fill="#444"/>
+          </g>
+        </svg>
+        <div class="baby-caption">snip, snip… my first haircut!</div>
+      </div>
+
+      <div class="hero-text">
+        <p class="intro">
+          <em>Jai Shri Krishna.</em> By the grace of Mahakali Mataji and Baliyadev Maharaj,
+          <strong>Shri Jigneshbhai Mohanbhai Mistry</strong> &amp; <strong>Smt. Yashasviniben Jigneshbhai Mistry</strong>
+          joyfully invite you with family and friends to bless their son at his
+        </p>
+        <span class="chi">Chi.</span>
+        <div class="name">Mivaan</div>
+        <div class="ceremony">Mundan Sanskar<small>BABRI · CHAUL SANSKAR VIDHI</small></div>
+        <div class="muhurat">
+          <div class="date">Sunday, 22 November 2026</div>
+          <div class="tithi">Vikram Samvat 2083 · Kartak Sud Teras</div>
+        </div>
+        <div class="countdown" id="countdown">
+          <span><b id="cd-d">–</b>days</span><span><b id="cd-h">–</b>hrs</span><span><b id="cd-m">–</b>min</span><span><b id="cd-s">–</b>sec</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="rise" aria-labelledby="day-h">
+      <div class="label"><h2 id="day-h">Celebrations</h2></div>
+      <ol class="events">
+        <li class="event">
+          <span class="time">9:30 AM</span>
+          <h3>Mundan Sanskar Vidhi</h3>
+          <div class="gu">મુંડન સંસ્કાર વિધી</div>
+          <p><strong>Baliyadev Maharaj Mandir</strong>, Nayna Chowk, Bharuch</p>
+        </li>
+        <li class="event">
+          <span class="time">4:00 PM</span>
+          <h3>Batuk Yatra (Varghoda)</h3>
+          <div class="gu">બટુકયાત્રા (વરઘોડા)</div>
+          <div class="route">Vejalpur Vaniyawad <em>→</em> Nani Bazar <em>→</em> Bambakhana <em>→</em> Ambemata Hall</div>
+        </li>
+        <li class="event">
+          <span class="time">7:00 PM</span>
+          <h3>Bhojan Samarambh</h3>
+          <div class="gu">ભોજન સમારંભ</div>
+          <p><strong>Ambemata Hall</strong>, Bambakhana, Vejalpur, Bharuch</p>
+          <a class="maplink" href="https://maps.app.goo.gl/esbbxW9weS8wY68H7" target="_blank" rel="noopener">Open in Maps →</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="bottom rise">
+      <div class="home" aria-labelledby="home-h">
+        <div class="label" style="margin-bottom:2px"><h2 id="home-h">Niwas</h2></div>
+        <div class="addr">D-1427, Vejalpur Vaniyawad,<br>near Jain Derasar, Bharuch</div>
+        <div class="phones">
+          <button class="phone" type="button" id="ph1">94271 03877</button>
+          <button class="phone" type="button" id="ph2">98249 56651</button>
+        </div>
+        <div class="copied" id="copied" aria-live="polite"></div>
+      </div>
+      <div class="tahuko" aria-labelledby="tahuko-h">
+        <div class="label" style="margin-bottom:4px"><h2 id="tahuko-h">Tahuko</h2></div>
+        <div class="poem">
+          Mumma's darling, Papa's pride, Dada-Dadi's &amp; Nana-Nani's joy,<br>
+          Masa-Masi's &amp; Foi-Fuva's little prince, Mama-Mami's beloved Banja —<br>
+          so do come, do come, to <strong>our Mivaan's Babri!</strong>
+        </div>
+        <div class="kids" id="kids"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <svg class="diya" viewBox="0 0 48 48" aria-hidden="true"><path class="flame" d="M24 6c4 6 6 10 6 13a6 6 0 0 1-12 0c0-3 2-7 6-13z" fill="#f29b11"/><path class="flame" d="M24 12c2 4 3 6 3 8a3 3 0 0 1-6 0c0-2 1-4 3-8z" fill="#ffe08a"/><path d="M6 28h36c-2 9-9 14-18 14S8 37 6 28z" fill="#b3122e"/><path d="M6 28h36" stroke="#c8901a" stroke-width="2"/></svg>
+      <div>Your presence is our blessing<small>આપની હાજરી એ જ અમારા આશીર્વાદ</small></div>
+      <svg class="diya" viewBox="0 0 48 48" aria-hidden="true"><path class="flame" d="M24 6c4 6 6 10 6 13a6 6 0 0 1-12 0c0-3 2-7 6-13z" fill="#f29b11"/><path class="flame" d="M24 12c2 4 3 6 3 8a3 3 0 0 1-6 0c0-2 1-4 3-8z" fill="#ffe08a"/><path d="M6 28h36c-2 9-9 14-18 14S8 37 6 28z" fill="#b3122e"/><path d="M6 28h36" stroke="#c8901a" stroke-width="2"/></svg>
+    </footer>
+  </article>
+</main>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var doors = document.getElementById('doors');
+  if (!reduce) {
+    setTimeout(function () { doors.classList.add('open'); }, 500);
+    setTimeout(function () { doors.classList.add('gone'); }, 2300);
+  } else { doors.classList.add('gone'); }
+
+  var toran = document.getElementById('toran');
+  function buildToran() {
+    toran.querySelectorAll('.strand').forEach(function (n) { n.remove(); });
+    var w = toran.clientWidth, step = 22, n = Math.floor(w / step);
+    for (var i = 0; i <= n; i++) {
+      var s = document.createElement('div');
+      s.className = 'strand';
+      s.style.left = (i * step + 5) + 'px';
+      s.style.animationDelay = (-(i % 7) * 0.4) + 's';
+      var len = i % 2 === 0 ? 3 : 2;
+      for (var k = 0; k < len; k++) s.appendChild(document.createElement('i'));
+      if (i % 2 === 0) s.appendChild(document.createElement('b'));
+      toran.appendChild(s);
+    }
+  }
+  buildToran();
+  window.addEventListener('resize', buildToran);
+
+  var kids = ['Dhwit','Saanvi','Daksh','Neev','Mit','Riya','Mahi','Yansh','Tirth','Riddhi','Raj','Raini','Hiyansh','Vrunda','Eva','Viha','Aarav'];
+  var kb = document.getElementById('kids');
+  kids.forEach(function (k, i) {
+    var s = document.createElement('span');
+    s.textContent = k;
+    s.style.animationDelay = (-(i * 0.23)) + 's';
+    kb.appendChild(s);
+  });
+
+  // Countdown to 22 Nov 2026, 9:30 AM IST
+  var target = new Date('2026-11-22T09:30:00+05:30').getTime();
+  var box = document.getElementById('countdown');
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function tick() {
+    var diff = target - Date.now();
+    if (diff <= 0) {
+      box.textContent = Date.now() < target + 15 * 3600 * 1000
+        ? 'The celebrations are happening today!'
+        : 'Thank you for your blessings for Mivaan.';
+      return;
+    }
+    var s = Math.floor(diff / 1000);
+    document.getElementById('cd-d').textContent = Math.floor(s / 86400);
+    document.getElementById('cd-h').textContent = pad(Math.floor(s % 86400 / 3600));
+    document.getElementById('cd-m').textContent = pad(Math.floor(s % 3600 / 60));
+    document.getElementById('cd-s').textContent = pad(s % 60);
+    setTimeout(tick, 1000);
+  }
+  tick();
+
+  var copied = document.getElementById('copied');
+  document.querySelectorAll('.phone').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var num = b.textContent;
+      var fallback = function () {
+        var r = document.createRange(); r.selectNodeContents(b);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        copied.textContent = 'Number selected, copy it from your keyboard menu';
+      };
+      try {
+        navigator.clipboard.writeText(num).then(function () { copied.textContent = 'Copied ' + num; }, fallback);
+      } catch (e) { fallback(); }
+    });
+  });
+
+  // Haircut animation: scissors visit each tuft, tuft falls, baby giggles bald, hair regrows
+  var snips = document.getElementById('snips');
+  if (reduce || !snips.animate) {
+    snips.setAttribute('transform', 'translate(196 70) rotate(200)');
+  } else {
+    var opts = { duration: 8000, iterations: Infinity, delay: 1800 };
+    var spots = [[80, 62], [104, 48], [126, 42], [148, 46], [170, 58]];
+    var tufts = document.querySelectorAll('#baby .tuft');
+    var sk = [{ offset: 0, transform: 'translate(10px, 20px) rotate(10deg)' }];
+    spots.forEach(function (p, k) {
+      var t = 0.08 + k * 0.1;
+      sk.push({ offset: t, transform: 'translate(' + (p[0] - 34) + 'px,' + (p[1] - 2) + 'px) rotate(8deg)' });
+      sk.push({ offset: t + 0.06, transform: 'translate(' + (p[0] - 30) + 'px,' + p[1] + 'px) rotate(14deg)' });
+      var fall = 'translate(' + (k % 2 ? 18 : -18) + 'px, 150px) rotate(' + (k % 2 ? 120 : -120) + 'deg)';
+      tufts[k].animate([
+        { offset: 0, transform: 'none', opacity: 1 },
+        { offset: t + 0.05, transform: 'none', opacity: 1 },
+        { offset: t + 0.2, transform: fall, opacity: 0 },
+        { offset: 0.86, transform: 'scale(0)', opacity: 0 },
+        { offset: 0.96, transform: 'scale(1)', opacity: 1 },
+        { offset: 1, transform: 'none', opacity: 1 }
+      ], opts);
+    });
+    sk.push({ offset: 0.62, transform: 'translate(230px, 10px) rotate(-10deg)' });
+    sk.push({ offset: 0.9, transform: 'translate(230px, 10px) rotate(-10deg)' });
+    sk.push({ offset: 1, transform: 'translate(10px, 20px) rotate(10deg)' });
+    snips.animate(sk, opts);
+    document.getElementById('hair-cap').animate([
+      { offset: 0, opacity: 1 }, { offset: 0.1, opacity: 1 }, { offset: 0.56, opacity: 0 },
+      { offset: 0.86, opacity: 0 }, { offset: 0.96, opacity: 1 }, { offset: 1, opacity: 1 }
+    ], opts);
+    var happy = [{ offset: 0, opacity: 0 }, { offset: 0.6, opacity: 0 }, { offset: 0.64, opacity: 1 },
+                 { offset: 0.84, opacity: 1 }, { offset: 0.88, opacity: 0 }, { offset: 1, opacity: 0 }];
+    document.querySelector('#baby .giggle').animate(happy, opts);
+    document.querySelector('#baby .sparkle').animate(happy, opts);
+    document.querySelector('#baby .smile').animate([
+      { offset: 0, opacity: 1 }, { offset: 0.6, opacity: 1 }, { offset: 0.64, opacity: 0 },
+      { offset: 0.84, opacity: 0 }, { offset: 0.88, opacity: 1 }, { offset: 1, opacity: 1 }
+    ], opts);
+  }
+
+  if (reduce) return;
+  var cv = document.getElementById('petals'), ctx = cv.getContext('2d');
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H, petals = [];
+  var colors = ['#f29b11', '#ffc23a', '#e8551f', '#d81b4a', '#ffd166'];
+  function size() {
+    W = window.innerWidth; H = window.innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  size(); window.addEventListener('resize', size);
+  var count = Math.round(Math.min(40, Math.max(18, W / 26)));
+  function make(initial) {
+    return {
+      x: Math.random() * W,
+      y: initial ? Math.random() * H - H : -20 - Math.random() * 60,
+      r: 4 + Math.random() * 5,
+      vy: 0.5 + Math.random() * 0.9,
+      sw: Math.random() * Math.PI * 2,
+      sp: 0.01 + Math.random() * 0.02,
+      rot: Math.random() * Math.PI,
+      vr: (Math.random() - .5) * 0.04,
+      c: colors[Math.floor(Math.random() * colors.length)]
+    };
+  }
+  for (var i = 0; i < count; i++) petals.push(make(true));
+  setTimeout(function () { for (var j = 0; j < 40; j++) petals.push(make(true)); }, 600);
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    for (var i = petals.length - 1; i >= 0; i--) {
+      var p = petals[i];
+      p.sw += p.sp; p.y += p.vy; p.x += Math.sin(p.sw) * 0.7; p.rot += p.vr;
+      if (p.y > H + 20) {
+        if (petals.length > count) { petals.splice(i, 1); continue; }
+        petals[i] = make(false); continue;
+      }
+      ctx.save();
+      ctx.translate(p.x, p.y); ctx.rotate(p.rot);
+      ctx.fillStyle = p.c; ctx.globalAlpha = .85;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, p.r, p.r * 0.55, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+</script>
+
+</body>
+</html>
+
